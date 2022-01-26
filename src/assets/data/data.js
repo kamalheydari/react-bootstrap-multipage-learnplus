@@ -1,3 +1,18 @@
+import {
+  web1,
+  web2,
+  web3,
+  web4,
+  health1,
+  health2,
+  music1,
+  music2,
+  person1,
+  person2,
+  person3,
+  person4,
+} from "./images";
+
 export const course = {
   info: {
     title: "Javascript For Beginners",
@@ -12,7 +27,7 @@ export const course = {
     price_old: "100$",
     price_new: "49$",
     price_discount: "51%",
-    course_img: "/img/courses/web/1.jpg",
+    course_img: web1,
     features: [
       {
         icon: "fa fa-tv",
@@ -149,7 +164,7 @@ export const course = {
   coments: [
     {
       user: "David M.",
-      img: "/img/users/person-1.png",
+      img: person1,
       time: "1 year ago",
       star: "5",
 
@@ -159,7 +174,7 @@ export const course = {
     },
     {
       user: "Matsu C",
-      img: "/img/users/person-2.png",
+      img: person2,
       time: "2 days ago",
       star: "4",
       title: "Keep learning",
@@ -168,7 +183,7 @@ export const course = {
     },
     {
       user: "Christopher A.",
-      img: "/img/users/person-3.png",
+      img: person3,
       time: "6 days ago",
       star: "5",
       title: "good course",
@@ -177,7 +192,7 @@ export const course = {
     },
     {
       user: "Ncha Takoh E.",
-      img: "/img/users/person-4.png",
+      img: person4,
       time: "just a moment ago",
       star: "4",
       title: "very useful",
@@ -192,7 +207,7 @@ export const course = {
     creator_courses: "12",
     creator_reviews: "1028",
     creator_skill: "web developer",
-    creator_img: "/img/users/person-1.png",
+    creator_img: person2,
     creator_desc:
       "Hello, I am John doe and I am a web developer. I live and work in Los Angeles, CA. I spend most of my day, experimenting with HTML, CSS and Javascript (and it's endless list of frameworks).",
   },
@@ -202,9 +217,9 @@ export const courses = [
   {
     id: 1,
     title: "Html For Beginners",
-    course_img: "/img/courses/web/1.jpg",
+    course_img: web1,
     creator: "john smilga",
-    creator_img: "/img/users/person-1.png",
+    creator_img: person1,
     star: 4.8,
     price: "19",
     category: "web",
@@ -212,9 +227,9 @@ export const courses = [
   {
     id: 2,
     title: "Css For Beginners",
-    course_img: "/img/courses/web/2.jpg",
+    course_img: web2,
     creator: "john smilga",
-    creator_img: "/img/users/person-2.png",
+    creator_img: person2,
     star: 4,
     price: "10",
     category: "web",
@@ -222,9 +237,9 @@ export const courses = [
   {
     id: 3,
     title: "Javascript",
-    course_img: "/img/courses/web/3.jpg",
+    course_img: web3,
     creator: "jessica fleming",
-    creator_img: "/img/users/person-3.png",
+    creator_img: person3,
     star: 3.9,
     price: "21",
     category: "web",
@@ -232,9 +247,9 @@ export const courses = [
   {
     id: 4,
     title: "Php Advance",
-    course_img: "/img/courses/web/4.jpg",
+    course_img: web4,
     creator: "wes bos",
-    creator_img: "/img/users/person-4.png",
+    creator_img: person4,
     star: 3.4,
     price: "18",
     category: "web",
@@ -242,9 +257,9 @@ export const courses = [
   {
     id: 5,
     title: "Weight Loss Course",
-    course_img: "/img/courses/health/1.jpg",
+    course_img: health1,
     creator: "dr karen e wells",
-    creator_img: "/img/users/person-1.png",
+    creator_img: person2,
     star: 4.1,
     price: "35",
     category: "health",
@@ -252,9 +267,9 @@ export const courses = [
   {
     id: 6,
     title: "Nutrition",
-    course_img: "/img/courses/health/2.jpg",
+    course_img: health2,
     creator: "chris worfolk",
-    creator_img: "/img/users/person-2.png",
+    creator_img: person3,
     star: 4.6,
     price: "15",
     category: "health",
@@ -262,9 +277,9 @@ export const courses = [
   {
     id: 7,
     title: "Become A Singer",
-    course_img: "/img/courses/music/1.jpg",
+    course_img: music1,
     creator: "laura goellner",
-    creator_img: "/img/users/person-3.png",
+    creator_img: person1,
     star: 3.8,
     price: "105",
     category: "music",
@@ -272,9 +287,9 @@ export const courses = [
   {
     id: 8,
     title: "Guitar Master",
-    course_img: "/img/courses/music/2.jpg",
+    course_img: music2,
     creator: "devatma saraswat",
-    creator_img: "/img/users/person-4.png",
+    creator_img: person3,
     star: 3.2,
     price: "99",
     category: "music",

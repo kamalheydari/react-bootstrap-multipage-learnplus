@@ -1,8 +1,20 @@
 .instructor .circular-img {
   position: relative;
-  width: 20rem;
-  height: 20rem;
+  width: 15rem;
+  height: 15rem;
   margin: auto;
+}
+@media (min-width: 992px) {
+  .instructor .circular-img {
+    width: 17rem;
+    height: 17rem;
+  }
+}
+@media (min-width: 1200px) {
+  .instructor .circular-img {
+    width: 19rem;
+    height: 19rem;
+  }
 }
 .instructor .circular-img::before {
   position: absolute;

@@ -12,8 +12,18 @@ body.glass-effect {
     var(--body-gradient-bg-color-2)
   );
   background-attachment: fixed;
-  padding: 25px 15px;
+  padding: 20px 12px;
   --backdrop-filter-blur: blur(5px);
+}
+@media (min-width: 992px) {
+  body.glass-effect {
+    padding: 30px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  body.glass-effect {
+    padding: 35px 25px;
+  }
 }
 body.glass-effect::before {
   content: "";
@@ -77,8 +87,8 @@ body.glass-effect .main-wrapper::after {
 }
 
 body.glass-effect .main-wrapper::before {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   background-image: linear-gradient(
     to right bottom,
     var(--decoration-bg-color-1),
@@ -88,8 +98,8 @@ body.glass-effect .main-wrapper::before {
   left: -50px;
 }
 body.glass-effect .main-wrapper::after {
-  height: 150px;
-  width: 150px;
+  height: 160px;
+  width: 160px;
   bottom: 20%;
   background-image: linear-gradient(
     to right bottom,

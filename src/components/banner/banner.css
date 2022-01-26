@@ -9,6 +9,18 @@
   height: 16rem;
   margin: auto;
 }
+@media (min-width: 992px) {
+  .banner .circular-img {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+@media (min-width: 1200px) {
+  .banner .circular-img {
+    width: 20rem;
+    height: 20rem;
+  }
+}
 .banner .circular-img::before {
   position: absolute;
   content: "";
