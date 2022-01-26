@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-bootstrap-multipage-learnplus/static/css/main.e6bcb2af.css",
+    "main.js": "/react-bootstrap-multipage-learnplus/static/js/main.be972003.js",
+    "static/media/bai-img.png": "/react-bootstrap-multipage-learnplus/static/media/bai-img.d1f3d39e3698849805ed.png",
+    "static/media/banner-img.png": "/react-bootstrap-multipage-learnplus/static/media/banner-img.67021ceceb7eb7a8162a.png",
+    "index.html": "/react-bootstrap-multipage-learnplus/index.html",
+    "main.e6bcb2af.css.map": "/react-bootstrap-multipage-learnplus/static/css/main.e6bcb2af.css.map",
+    "main.be972003.js.map": "/react-bootstrap-multipage-learnplus/static/js/main.be972003.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6bcb2af.css",
+    "static/js/main.be972003.js"
+  ]
+}
