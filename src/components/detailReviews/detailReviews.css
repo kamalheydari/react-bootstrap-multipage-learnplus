@@ -1,0 +1,10 @@
+.rating-average {
+  color: var(--balck-90);
+}
+
+.comment-img {
+  width: min(50px, 100%);
+}
+.reviews-comment p {
+  text-align: justify;
+}
