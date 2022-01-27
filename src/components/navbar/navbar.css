@@ -90,12 +90,11 @@
     top: auto;
     padding: 0;
     border-radius: 0;
-    height: 0;
-    overflow: hidden;
-    transition: 0.3s !important;
   }
-  .header .sub-menu.active {
-    height: 100px;
+  .sub-menu-container {
+    transition:height 0.3s ;
+    overflow: hidden;
+    height: 0;
   }
   .header .nav-item i {
     transition: 0.3s;
@@ -109,8 +108,14 @@
 
   .header-close-btn {
     color: var(--WHITE);
-    padding: 0.25rem 0.75rem;
+    width: 35px;
+    height: 35px;
+    display: flex;
   }
+  .header-close-btn i {
+    margin: auto;
+  }
+
   .header-backdrop {
     position: fixed;
     z-index: 99;

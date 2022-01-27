@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import { useGlobalContext } from "../../context/context";
@@ -13,6 +13,20 @@ const Navbar = () => {
     closeSidebar,
     isSubmenu,
   } = useGlobalContext();
+
+  const submenuRef = useRef(null);
+  const submenuContainerRef = useRef(null);
+
+  useEffect(() => {
+    const submenuHeight = submenuRef.current.getBoundingClientRect().height;
+
+    if (isSubmenu) {
+      submenuContainerRef.current.style.height = `${submenuHeight}px`;
+    } else {
+      submenuContainerRef.current.style.height = "0px";
+    }
+  }, [isSubmenu]);
+
   return (
     <header className="header py-2">
       <div
@@ -73,30 +87,28 @@ const Navbar = () => {
                     } `}
                   ></i>
                 </a>
-                <ul
-                  className={`sub-menu rounded-2 px-lg-2 ${
-                    isSubmenu ? "active" : null
-                  } `}
-                >
-                  <li className="nav-item">
-                    <Link
-                      onClick={closeSidebar}
-                      to="/login"
-                      className="nav-link px-5 px-lg-0 "
-                    >
-                      Log In
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link
-                      onClick={closeSidebar}
-                      to="signup"
-                      className="nav-link px-5 px-lg-0"
-                    >
-                      Sign Up
-                    </Link>
-                  </li>
-                </ul>
+                <div className="sub-menu-container" ref={submenuContainerRef}>
+                  <ul className="sub-menu rounded-2 px-lg-2" ref={submenuRef}>
+                    <li className="nav-item">
+                      <Link
+                        onClick={closeSidebar}
+                        to="/login"
+                        className="nav-link px-5 px-lg-0 "
+                      >
+                        Log In
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link
+                        onClick={closeSidebar}
+                        to="signup"
+                        className="nav-link px-5 px-lg-0"
+                      >
+                        Sign Up
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li className="nav-item ">
                 <Link
