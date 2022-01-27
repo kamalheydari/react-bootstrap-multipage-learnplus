@@ -43,7 +43,7 @@ const Contact = () => {
             </div>
             <div className="col-md-6">
               <div className="contact-form box">
-                <h2 className="text-center fs- fw-bold mb-5">Leave a Message</h2>
+                <h2 className="text-center fs-4 fw-bold mb-5">Leave a Message</h2>
                 <form>
                   <div className="form-group mb-3">
                     <input

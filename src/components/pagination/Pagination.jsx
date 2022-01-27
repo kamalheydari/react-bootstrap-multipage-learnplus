@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-import './pagination.css'
+import "./pagination.css";
 
 const Pagination = () => {
   return (
@@ -8,44 +9,44 @@ const Pagination = () => {
       <nav aria-label="Page navigation ">
         <ul className="pagination">
           <li className="page-item">
-            <a href="#" className="page-link" aria-label="Previous">
+            <Link to={""} className="page-link" aria-label="Previous">
               <i className="fas fa-chevron-left"></i>
-            </a>
+            </Link>
           </li>
           <li className="page-item">
-            <a href="#" className="page-link">
+            <Link to={""} className="page-link">
               1
-            </a>
+            </Link>
           </li>
           <li className="page-item active">
-            <a href="#" className="page-link">
+            <Link to={""} className="page-link">
               2
-            </a>
+            </Link>
           </li>
           <li className="page-item">
-            <a href="#" className="page-link">
+            <Link to={""} className="page-link">
               3
-            </a>
+            </Link>
           </li>
           <li className="page-item">
-            <a href="#" className="page-link ">
+            <Link to={""} className="page-link ">
               4
-            </a>
+            </Link>
           </li>
           <li className="page-item">
-            <a href="#" className="page-link disabled">
+            <Link to={""} className="page-link disabled">
               ...
-            </a>
+            </Link>
           </li>
           <li className="page-item">
-            <a href="#" className="page-link">
+            <Link to={""} className="page-link">
               40
-            </a>
+            </Link>
           </li>
           <li className="page-item">
-            <a href="#" className="page-link" aria-label="Next">
+            <Link to={""} className="page-link" aria-label="Next">
               <i className="fas fa-chevron-right"></i>
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

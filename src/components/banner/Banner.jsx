@@ -24,17 +24,17 @@ const Banner = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6 ">
-            <h2 className="mb-3 fs-5 theme-clr">
+            <h2 className="theme-clr mb-3 fs-5">
               An investment in lnowledge pays the best interset
             </h2>
             <h1 className="mb-3 text-capitalize fs-3 fw-bold">
               best online platform for learning.
             </h1>
-            <p className="mb-4 text-muted ">
+            <p className="mb-4 text-muted">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
               nisi delectus a minus.
             </p>
-            <button type="button" className=" theme-btn">
+            <button type="button" className="theme-btn">
               join free
             </button>
           </div>

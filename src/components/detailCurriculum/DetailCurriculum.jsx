@@ -37,7 +37,7 @@ const DetailCurriculum = ({ chapters }) => {
                       <span className="mb-1 mb-md-0 fs-6 ">
                         {chapter.total_parts} lessons
                       </span>
-                      <span className="mx-1 theme-clr">\</span>
+                      <span className="theme-clr mx-1">\</span>
                       <span>{chapter.total_time}</span>
                     </div>
                   </div>

@@ -21,7 +21,7 @@ const DetailAside = ({
         </div>
         <div className="header-info">
           <div className="info-icon mb-2 ms-4">
-            <i className="fas fa-play "></i>
+            <i className="fas fa-play"></i>
           </div>
           <div className="info-text fs-6">
             <span>Course Preview</span>
@@ -33,7 +33,7 @@ const DetailAside = ({
           {price_old}
         </span>
         <span className="price-new me-3 fs-3 fw-bold">{price_new}</span>
-        <span className="price-discount me-3 fs-6 theme-clr">
+        <span className="price-discount theme-clr me-3 fs-6">
           {price_discount} off
         </span>
       </div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import { useGlobalContext } from "../../context/context";
@@ -13,19 +13,6 @@ const Navbar = () => {
     closeSidebar,
     isSubmenu,
   } = useGlobalContext();
-
-  const submenuRef = useRef(null);
-  const submenuContainerRef = useRef(null);
-
-  useEffect(() => {
-    const submenuHeight = submenuRef.current.getBoundingClientRect().height;
-
-    if (isSubmenu) {
-      submenuContainerRef.current.style.height = `${submenuHeight}px`;
-    } else {
-      submenuContainerRef.current.style.height = "0px";
-    }
-  }, [isSubmenu]);
 
   return (
     <header className="header py-2">
@@ -43,7 +30,7 @@ const Navbar = () => {
           <button
             onClick={openSidebar}
             type="button"
-            className="navbar-togglre d-lg-none fs-3"
+            className="navbar-togglre d-lg-none fs-1"
           >
             <i className="fa fa-bars"></i>
           </button>
@@ -53,13 +40,13 @@ const Navbar = () => {
             } `}
           >
             <button
-              className="header-close-btn d-lg-none theme-bg fs-4 rounded-1 mx-3 mx-lg-0 mb-3 mb-lg-0 "
+              className="header-close-btn d-lg-none theme-bg fs-3 rounded-1 mx-3 mx-lg-0 mb-3 mb-lg-0 "
               onClick={closeSidebar}
               type="button"
             >
               <i className="fa fa-times"></i>
             </button>
-            <ul className="navbar-nav d-flex flex-lg-row flex-column align-lg-items-center ">
+            <ul className="navbar-nav d-flex flex-lg-row flex-column align-lg-items-center fs-5">
               <li className="nav-item me-5 ">
                 <Link
                   onClick={closeSidebar}
@@ -72,7 +59,7 @@ const Navbar = () => {
               <li className="nav-item me-5 ">
                 <Link
                   onClick={closeSidebar}
-                  className="nav-link  px-3 px-lg-0"
+                  className="nav-link px-3 px-lg-0"
                   to="/courses"
                 >
                   Courses
@@ -87,28 +74,30 @@ const Navbar = () => {
                     } `}
                   ></i>
                 </a>
-                <div className="sub-menu-container" ref={submenuContainerRef}>
-                  <ul className="sub-menu rounded-2 px-lg-2" ref={submenuRef}>
-                    <li className="nav-item">
-                      <Link
-                        onClick={closeSidebar}
-                        to="/login"
-                        className="nav-link px-5 px-lg-0 "
-                      >
-                        Log In
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link
-                        onClick={closeSidebar}
-                        to="signup"
-                        className="nav-link px-5 px-lg-0"
-                      >
-                        Sign Up
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
+                <ul
+                  className={`sub-menu rounded-2 px-lg-2 ${
+                    isSubmenu ? "active" : ""
+                  } `}
+                >
+                  <li className="nav-item">
+                    <Link
+                      onClick={closeSidebar}
+                      to="/login"
+                      className="nav-link px-5 px-lg-0 "
+                    >
+                      Log In
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      onClick={closeSidebar}
+                      to="signup"
+                      className="nav-link px-5 px-lg-0"
+                    >
+                      Sign Up
+                    </Link>
+                  </li>
+                </ul>
               </li>
               <li className="nav-item ">
                 <Link

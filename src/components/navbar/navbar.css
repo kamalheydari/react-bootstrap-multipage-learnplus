@@ -50,7 +50,7 @@
   transform: translateY(10px);
   opacity: 0;
   visibility: hidden;
-  z-index: 10;
+  z-index: 100;
 }
 
 .nav-item:hover > .sub-menu {
@@ -58,15 +58,14 @@
   opacity: 1;
   transform: translateY(0);
 }
-
 @media (max-width: 992px) {
   .navbar-nav-container {
     background-color: var(--white);
     position: fixed;
     top: 0;
-    right: -10rem;
+    right: -13rem;
     height: 100vh;
-    width: 10rem;
+    width: 13rem;
     z-index: 100;
     transition: right 0.3s ease-in;
   }
@@ -90,12 +89,13 @@
     top: auto;
     padding: 0;
     border-radius: 0;
-  }
-  .sub-menu-container {
-    transition:height 0.3s ;
-    overflow: hidden;
     height: 0;
+    overflow: hidden;
   }
+  .header .sub-menu.active {
+    height: 7rem;
+  }
+
   .header .nav-item i {
     transition: 0.3s;
   }

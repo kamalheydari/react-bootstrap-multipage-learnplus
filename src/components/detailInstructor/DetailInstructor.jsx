@@ -27,7 +27,7 @@ const DetailInstructor = ({
             </div>
             <div className="instructor-info">
               <span className="fs-4">{creator_name}</span>
-              <span className="ms-2 theme-clr">({creator_skill})</span>
+              <span className="theme-clr ms-2">({creator_skill})</span>
               <ul>
                 <li>
                   <i className="theme-clr me-1 fas fa-star"></i>
