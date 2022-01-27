@@ -12,7 +12,7 @@ body.glass-effect {
     var(--body-gradient-bg-color-2)
   );
   background-attachment: fixed;
-  padding: 20px 12px;
+  padding: 20px 10px;
   --backdrop-filter-blur: blur(5px);
 }
 @media (min-width: 992px) {

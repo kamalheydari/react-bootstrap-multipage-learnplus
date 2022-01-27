@@ -63,16 +63,22 @@ h6 {
   line-height: 1.3;
 }
 html {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
+
 @media (min-width: 567px) {
   html {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 @media (min-width: 992px) {
   html {
     font-size: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 1.1rem;
   }
 }
 
@@ -111,18 +117,14 @@ section:not(.banner, .facts, .single-course) {
   background-color: var(--white);
   border-radius: 0.4rem;
   box-shadow: var(--shadow);
-  padding: 0.5rem;
+  padding: 1rem 0.8rem;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .box {
-    padding: 1rem;
+    padding: 1.5rem ;
   }
 }
-@media (min-width: 1200px) {
-  .box {
-    padding: 1.5rem;
-  }
-}
+
 
 @media (min-width: 1400px) {
   .box {
@@ -133,10 +135,15 @@ section:not(.banner, .facts, .single-course) {
 ! 06. custom bootstrap styles 
  ----- */
 .container {
-  --bs-gutter-x: 15px;
+  --bs-gutter-x: 10px;
   max-width: 1140px;
 }
 
+@media (min-width: 768px) {
+  .container {
+    --bs-gutter-x: 15px;
+  }
+}
 form a {
   color: var(--main-color);
 }

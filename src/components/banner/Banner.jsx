@@ -34,11 +34,7 @@ const Banner = () => {
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
               nisi delectus a minus.
             </p>
-            <button
-              type="button"
-              onClick={() => openSidebar()}
-              className=" theme-btn"
-            >
+            <button type="button" className=" theme-btn">
               join free
             </button>
           </div>

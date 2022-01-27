@@ -63,7 +63,7 @@ const Courses = () => {
                 role="tabpanel"
                 aria-labelledby="web-development-tab"
               >
-                <div className="row justify-content-center">
+                <div className="row justify-content-center g-4 ">
                   {courses
                     .filter((item) => item.category === "web")
                     .map((item) => (

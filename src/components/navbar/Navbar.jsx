@@ -14,7 +14,7 @@ const Navbar = () => {
     isSubmenu,
   } = useGlobalContext();
   return (
-    <header className="header">
+    <header className="header py-2">
       <div
         className={`header-backdrop ${isSidebar ? "active" : null}`}
         onClick={closeSidebar}
@@ -65,7 +65,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item me-5 ">
-                <a href="#" onClick={toggleSubmenu} className=" px-3 px-lg-0">
+                <a onClick={toggleSubmenu} className=" px-3 px-lg-0">
                   User
                   <i
                     className={`fas fa-chevron-down fs-6 ms-2 ms-lg-1 ${
