@@ -19,7 +19,7 @@ const Courses = () => {
                 role="tablist"
               >
                 <button
-                  className="nav-link active  rounded-3 me-2 px-4"
+                  className="nav-link active  rounded-3 me-2 px-4 mb-2 mb-md-0"
                   id="web-development-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#web-development"
@@ -31,7 +31,7 @@ const Courses = () => {
                   web development
                 </button>
                 <button
-                  className="nav-link rounded-3 me-2 px-4"
+                  className="nav-link rounded-3 me-2 px-4 mb-2 mb-md-0"
                   id="health-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#health"
@@ -43,7 +43,7 @@ const Courses = () => {
                   health
                 </button>
                 <button
-                  className="nav-link rounded-3 me-2 px-4"
+                  className="nav-link rounded-3 me-2 px-4 mb-2 mb-md-0"
                   id="music-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#music"
