@@ -13,7 +13,7 @@ const getStorageTheme = (themeState) => {
       themeState = true;
     }
     if (themeState === "glass_effect") {
-      themeState = true;
+      themeState = false;
     }
   }
 
@@ -45,7 +45,7 @@ export const AppProvider = ({ children }) => {
     localStorage.setItem("theme_color", JSON.stringify(themeColor));
     localStorage.setItem("glass_effect", JSON.stringify(glassMode));
   }, [themeColor, darkMode, glassMode]);
-  
+
   // handlers
 
   const openSidebar = () => {
