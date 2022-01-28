@@ -46,7 +46,7 @@ button {
 body {
   background-color: var(--body-bg-color);
   color: var(--black-70);
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif,arial;
   overflow-x: hidden;
 }
 
@@ -64,6 +64,7 @@ h6 {
 }
 html {
   font-size: 0.8rem;
+  scroll-behavior: smooth;
 }
 
 @media (min-width: 567px) {

@@ -1,8 +1,8 @@
-.accordion-body a {
+.accordion-body button {
   color: var(--black-70);
   transition: color 0.2s ease;
 }
-.accordion-body a:hover {
+.accordion-body button:hover {
   color: var(--main-color);
 }
 .course-curriculum .accordion-item {
@@ -16,7 +16,6 @@
 .course-curriculum .accordion-button:not(.collapsed) {
   font-weight: 600;
   box-shadow: none;
-  border-bottom: 1px solid var(--border-color-1);
   background: transparent;
   color: var(--black-70);
 }
@@ -24,4 +23,7 @@
   background-color: transparent;
   color: var(--black-90);
   font-weight: 300;
+}
+.course-curriculum .accordion-body {
+  border-top: 1px solid var(--border-color-1);
 }

@@ -8,3 +8,11 @@
 .reviews-comment p {
   text-align: justify;
 }
+
+.bars-star {
+  min-width: 40px;
+}
+.bars-pecent {
+  min-width: 30px;
+  text-align: center;
+}

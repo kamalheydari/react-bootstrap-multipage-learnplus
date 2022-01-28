@@ -58,10 +58,10 @@ const DetailCurriculum = ({ chapters }) => {
                     {chapter.parts.map((part, index) => (
                       <li key={index} className="my-2">
                         <div className="d-flex justify-content-between">
-                          <a href="#">
+                          <button type="button">
                             <i className="fas fa-play me-2 theme-clr"></i>
                             {part.sub_title}
-                          </a>
+                          </button>
                           <span>{part.time}</span>
                         </div>
                       </li>
