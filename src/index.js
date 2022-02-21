@@ -10,10 +10,12 @@ import "./theme/colors.css";
 import "./theme/glass.css";
 
 import { AppProvider } from "./context/context.js";
+import { ScrollToTop } from "./components/index.js";
 
 ReactDOM.render(
   <AppProvider>
     <HashRouter>
+      <ScrollToTop/>
       <App />
     </HashRouter>
   </AppProvider>,

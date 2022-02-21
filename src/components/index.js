@@ -17,3 +17,4 @@ export { default as DetailDescription } from "./detailDescription/DetailDescript
 export { default as DetailInstructor } from "./detailInstructor/DetailInstructor";
 export { default as DetailReviews } from "./detailReviews/DetailReviews";
 export { default as StyleSwitcher } from "./styleSwitcher/StyleSwitcher";
+export { default as ScrollToTop } from "./scrollToTop/ScrollToTop";
